@@ -1,0 +1,83 @@
+.gameOver {
+  background-color: rgba(0, 0, 0, .9);
+
+  color: #fff;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3.125rem;
+
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.restart {
+  background-color: yellow;
+  border: none;
+  border-radius: .625rem;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  margin-top: 1.5rem;
+
+  padding: 1.25rem;
+
+  transition: background-color .75s;
+}
+
+.restart:hover {
+  background-color: #05c3ff;
+
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media screen and (max-width: 800px) {
+  .gameOver div {
+    font-size: 2.5rem;
+
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  .gameOver .restart {
+    font-size: 1.125rem; 
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .gameOver div {
+    font-size: 2.125rem;
+  }
+  
+  .gameOver .restart {
+    font-size: 1rem; 
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .gameOver div {
+    font-size: 1.825rem;
+  }
+  
+  .gameOver .restart {
+    font-size: .825rem; 
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .gameOver div {
+    font-size: 1.525rem;
+  }
+  
+  .gameOver .restart {
+    padding: .625rem 1.5rem;
+  }
+}
